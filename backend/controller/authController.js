@@ -104,8 +104,8 @@ exports.login = async (req, res) => {
 
     res.cookie("token", token, {
   httpOnly: true,
-  sameSite: "lax", // important for cross-origin
-  secure: false,   // true only in production with HTTPS
+  sameSite: "None", 
+  secure: true,   
   expires: new Date(Date.now() + 2 * 24 * 60 * 60 * 1000),
 });
 
