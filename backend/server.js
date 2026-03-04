@@ -8,7 +8,11 @@ const app = express();
 
 // Middleware 
 app.use(cors({
+<<<<<<< HEAD
   origin: process.env.CLIENT_URL,
+=======
+  origin: "https://todo-full-stack-navy.vercel.app/",
+>>>>>>> 5c17ca59c0f1e8756b664cc3a087e83a97d44fe3
   credentials: true
 }));
 app.use(express.json());
