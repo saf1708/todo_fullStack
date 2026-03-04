@@ -13,9 +13,11 @@ app.use(
       "http://localhost:5173",
       "https://todo-full-stack-navy.vercel.app"
     ],
-    credentials: true
+    credentials: true,
+    methods: ["GET","POST","PUT","DELETE","OPTIONS"],
   })
 );
+app.options("*", cors());
 app.use(express.json());
 app.use(cookieParser());   
 
